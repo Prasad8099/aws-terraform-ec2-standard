@@ -4,6 +4,12 @@ variable "aws_region" {
   default     = "us-east-1"
 }
 
+variable "aws_profile" {
+  description = "AWS CLI profile name to use for authentication"
+  type        = string
+  default     = "mnsv4"
+}
+
 variable "instances" {
   description = "Map of instance configurations"
   type = map(object({
